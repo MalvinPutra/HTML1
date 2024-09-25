@@ -1,0 +1,239 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #FDEBD0; /* Warna pastel cerah sebagai latar belakang */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #F39C12; /* Warna oranye yang terang */
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Teks putih kontras dengan oranye */
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FDEBD0; /* Warna hover */
+}
+
+/* Landing Page */
+.landing-page {
+    background: url('pisangkeju-banner.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff; /* Teks putih kontras dengan gambar */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.landing-page h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.landing-page p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: #D35400; /* Warna tombol oranye tua */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #E67E22;
+    transform: scale(1.05);
+}
+
+/* About Section */
+.about-section {
+    background-color: #FFEB99;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 20px auto;
+    color: #5D4037;
+}
+
+/* Services Section */
+.services-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #FFF6D5;
+}
+
+.services-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.service-card {
+    background: #fff;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 280px;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+.service-card h3 {
+    font-size: 1.6rem;
+    color: #D35400;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Gallery Section */
+.gallery-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.gallery-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery-images img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-images img:hover {
+    transform: scale(1.05);
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    background-color: #FFEB99;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.testimonials-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.testimonial {
+    background-color: #F39C12;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 15px;
+    display: inline-block;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+/* Tombol Pesan Sekarang Mengambang */
+.floating-cta-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px 30px;
+    background-color: #E74C3C;
+    color: white;
+    font-weight: bold;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+}
+
+.floating-cta-button:hover {
+    background-color: #F9E79F;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #F39C12;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    font-size: 1rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
